@@ -2,7 +2,7 @@
   "name": "league-rank-sync",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/justNuka/league-rank-sync.git"
