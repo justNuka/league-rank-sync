@@ -6,27 +6,74 @@
     <title>League Rank Sync</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            text-align: center;
+        }
+
         h1 {
             color: #5b9bd5;
+            font-size: 36px;
+            margin-bottom: 20px;
         }
+
         p {
             font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .features {
+            text-align: left;
+            margin-top: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .features li {
+            font-size: 18px;
+            margin: 10px 0;
+            padding-left: 30px;
+            background-image: url('https://cdn-icons-png.flaticon.com/512/1698/1698531.png');
+            background-size: 20px;
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-style: italic;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <h1>League Rank Sync</h1>
-    <p>Extension Twitch pour afficher les badges de rang League of Legends dans le chat Twitch.</p>
-    <p>Fonctionnalités :</p>
-    <ul>
-        <li>Authentification Riot Games et Twitch</li>
-        <li>Affichage des badges de rang à côté des noms des utilisateurs dans le chat</li>
-        <li>Le streamer peut choisir de rendre obligatoire l'affichage du badge (et donc la connexion à Riot pour la récupération de son rang) ou laisser n'importe qui parler.</li>
-    </ul>
-    <p>En développement...</p>
+    <div class="container">
+        <h1>League Rank Sync</h1>
+        <p>Extension Twitch pour afficher les badges de rang League of Legends dans le chat Twitch.</p>
+        <h2>Fonctionnalités :</h2>
+        <ul class="features">
+            <li>Authentification Riot Games et Twitch</li>
+            <li>Affichage des badges de rang à côté des noms des utilisateurs dans le chat</li>
+            <li>Le streamer peut choisir de rendre obligatoire l'affichage du badge ou laisser n'importe qui parler</li>
+        </ul>
+        <div class="footer">
+            En développement...
+        </div>
+    </div>
 </body>
 </html>
