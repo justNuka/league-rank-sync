@@ -1,0 +1,21 @@
+{
+    "version": "1.0",
+    "id": "league-rank-sync",
+    "description": "Affiche le rang des utilisateurs League of Legends dans le chat Twitch",
+    "author_name": "TonNom",
+    "extensions": [
+        {
+        "id": "league-rank-sync",
+        "version": "1.0",
+        "type": "component",
+        "platform": "web",
+        "frontend": {
+            "uri": "frontend/index.html"
+        },
+        "backend": {
+            "uri": "backend/server.js",
+            "config": "config/config.html"
+        }
+        }
+    ]
+}  

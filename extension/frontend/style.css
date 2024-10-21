@@ -1,0 +1,9 @@
+.rank-badge {
+    background-color: #FFD700;  /* Couleur exemple pour un badge Or */
+    color: white;
+    padding: 2px 4px;
+    border-radius: 3px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
