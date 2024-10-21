@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth Twitch & Riot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Connexion via Twitch ou Riot Games</h1>
+    
+    <button id="auth-twitch-btn">Se connecter avec Twitch</button>
+    <button id="auth-riot-btn">Se connecter avec Riot Games</button>
+
+    <script>
+        // Fonction de redirection pour l'authentification Twitch
+        document.getElementById('auth-twitch-btn').addEventListener('click', function() {
+            window.location.href = '/auth/twitch';  // Lancer l'authentification Twitch
+        });
+
+        // Fonction de redirection pour l'authentification Riot
+        document.getElementById('auth-riot-btn').addEventListener('click', function() {
+            window.location.href = '/auth/riot';  // Lancer l'authentification Riot
+        });
+    </script>
+</body>
+</html>

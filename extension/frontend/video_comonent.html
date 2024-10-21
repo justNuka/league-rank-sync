@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badge de Rang</title>
+    <style>
+        .rank-badge {
+            background-color: #FFD700;  /* Exemple pour un badge Or */
+            color: white;
+            padding: 2px 5px;
+            border-radius: 5px;
+            margin-left: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Affichage des badges de rang</h2>
+    <div id="chat-messages">
+        <!-- Exemple d'ajout dynamique des messages et badges -->
+        <div class="chat-line">
+            <span class="chat-author__display-name">SummonerName</span>
+            <span class="rank-badge">Platinum III</span>
+        </div>
+    </div>
+
+    <script>
+        // Ici tu peux ajouter le JavaScript pour interagir avec l'extension Twitch
+        // Ajouter un exemple d'utilisateur avec badge de rang dans le chat
+        const chatMessages = document.getElementById('chat-messages');
+
+        function addChatMessage(username, rank) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('chat-line');
+
+            const nameElement = document.createElement('span');
+            nameElement.classList.add('chat-author__display-name');
+            nameElement.textContent = username;
+
+            const badgeElement = document.createElement('span');
+            badgeElement.classList.add('rank-badge');
+            badgeElement.textContent = rank;
+
+            messageElement.appendChild(nameElement);
+            messageElement.appendChild(badgeElement);
+            chatMessages.appendChild(messageElement);
+        }
+
+        // Exemple d'appel de la fonction
+        addChatMessage('SummonerName', 'Gold IV');
+    </script>
+</body>
+</html>
